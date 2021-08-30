@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import Cardlist from './components/Card-list/Cardlist.compo';
+import Search from './components/search/Search.compo';
 
 export default class App extends Component {
   constructor() {
     super();
+
     this.state = {
       aliens: [],
+      searchfield: '',
     };
   }
 
-  // mount
+  // mounting - when page loads...
   componentDidMount() {
     try {
       fetch('https://jsonplaceholder.typicode.com/users')
@@ -22,15 +25,27 @@ export default class App extends Component {
   }
 
   render() {
+    const { aliens, searchfield } = this.state;
+    const filteredAliens = aliens.filter((alien) =>
+      alien.name.toLowerCase().includes(searchfield.toLowerCase())
+    );
+
     return (
       <div>
-        <Cardlist>
-          {this.state.aliens.map((alien) => (
-            <div key={alien.id}>
-              <h3>{alien.name}</h3>
-            </div>
-          ))}
-        </Cardlist>
+        <Search
+          placeholder={'Search aliens....'}
+          onChange={(e) => {
+            this.setState({ searchfield: e.target.value });
+          }}
+        />
+        {/* <input
+          type="search"
+          placeholder="search the alien..."
+          onChange={(e) => {
+            this.setState({ searchfield: e.target.value });
+          }}
+        /> */}
+        <Cardlist aliens={filteredAliens} />
       </div>
     );
   }
