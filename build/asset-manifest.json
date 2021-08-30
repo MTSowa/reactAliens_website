@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/reactAliens_website/static/css/main.443b92a6.chunk.css",
+    "main.js": "/reactAliens_website/static/js/main.62606d0f.chunk.js",
+    "main.js.map": "/reactAliens_website/static/js/main.62606d0f.chunk.js.map",
+    "runtime-main.js": "/reactAliens_website/static/js/runtime-main.11598bf9.js",
+    "runtime-main.js.map": "/reactAliens_website/static/js/runtime-main.11598bf9.js.map",
+    "static/js/2.9ef176f8.chunk.js": "/reactAliens_website/static/js/2.9ef176f8.chunk.js",
+    "static/js/2.9ef176f8.chunk.js.map": "/reactAliens_website/static/js/2.9ef176f8.chunk.js.map",
+    "static/js/3.3bd31e41.chunk.js": "/reactAliens_website/static/js/3.3bd31e41.chunk.js",
+    "static/js/3.3bd31e41.chunk.js.map": "/reactAliens_website/static/js/3.3bd31e41.chunk.js.map",
+    "index.html": "/reactAliens_website/index.html",
+    "static/css/main.443b92a6.chunk.css.map": "/reactAliens_website/static/css/main.443b92a6.chunk.css.map",
+    "static/js/2.9ef176f8.chunk.js.LICENSE.txt": "/reactAliens_website/static/js/2.9ef176f8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11598bf9.js",
+    "static/js/2.9ef176f8.chunk.js",
+    "static/css/main.443b92a6.chunk.css",
+    "static/js/main.62606d0f.chunk.js"
+  ]
+}
