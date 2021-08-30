@@ -23,11 +23,14 @@ export default class App extends Component {
       console.log('there has been an error...');
     }
   }
+
+  // use Arrow functions when in class component- to simply use the THIS keyword
   handleChange = (e) => {
     this.setState({ searchfield: e.target.value });
   };
 
   render() {
+    // example for usong search feature
     const { aliens, searchfield } = this.state;
     const filteredAliens = aliens.filter((alien) =>
       alien.name.toLowerCase().includes(searchfield.toLowerCase())
@@ -35,6 +38,7 @@ export default class App extends Component {
 
     return (
       <div>
+        <h2>A L I E N S</h2>
         <Search
           placeholder={'Search aliens....'}
           onChange={this.handleChange}
