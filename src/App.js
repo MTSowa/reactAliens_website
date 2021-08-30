@@ -23,6 +23,9 @@ export default class App extends Component {
       console.log('there has been an error...');
     }
   }
+  handleChange = (e) => {
+    this.setState({ searchfield: e.target.value });
+  };
 
   render() {
     const { aliens, searchfield } = this.state;
@@ -34,9 +37,7 @@ export default class App extends Component {
       <div>
         <Search
           placeholder={'Search aliens....'}
-          onChange={(e) => {
-            this.setState({ searchfield: e.target.value });
-          }}
+          onChange={this.handleChange}
         />
         {/* <input
           type="search"
